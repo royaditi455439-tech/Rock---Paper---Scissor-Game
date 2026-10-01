@@ -1,0 +1,78 @@
+{
+  "nbformat": 4,
+  "nbformat_minor": 0,
+  "metadata": {
+    "colab": {
+      "provenance": []
+    },
+    "kernelspec": {
+      "name": "python3",
+      "display_name": "Python 3"
+    },
+    "language_info": {
+      "name": "python"
+    }
+  },
+  "cells": [
+    {
+      "cell_type": "code",
+      "source": [
+        "import random\n",
+        "# List of choices\n",
+        "item_list = [\"Rock\", \"Paper\", \"Scissor\"]\n",
+        "\n",
+        "#Take user's choice\n",
+        "user_choice = input (\"Enter your move - Rock, Paper, Scissor: \") .strip().c\n",
+        "apitalize()\n",
+        "\n",
+        "\n",
+        "#Check valid input\n",
+        "if user_choice not in item_list:\n",
+        "   print(\"Invalid choice! Please enter Rock,Paper, or Scissor.\")\n",
+        "\n",
+        "else:\n",
+        "  # Computer chooses randomly\n",
+        "  Comp_choice = random.choice(item_list)\n",
+        "\n",
+        "  print(\"User choice = \", user_choice)\n",
+        "  print(\"Computer choice = \", Comp_choice)\n",
+        "\n",
+        "# Decide the winner\n",
+        "if user_choice == Comp_choice:\n",
+        "   print(\"Result: It's a tie!\")\n",
+        "\n",
+        "elif user_choice == \"Rock\" and Comp_choice == \"Scissor\":\n",
+        "     print(\"Result: You Win!\")\n",
+        "\n",
+        "elif user_choice == \"Paper\" and Comp_choice == \"Rock\":\n",
+        "     print(\"Result: You Win!\")\n",
+        "\n",
+        "elif user_choice == \"Scissor\" and Comp_choice == \"Paper\":\n",
+        "     print(\"Result : You Win!\")\n",
+        "\n",
+        "else:\n",
+        "     print(\"Result : Computer Win!\")"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "qsHI4EX9VkZE",
+        "outputId": "7b9cb73d-4f77-475a-c1f7-f71c71d44738"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "Enter your move - Rock, Paper, Scissor: Rock\n",
+            "User choice =  Rock\n",
+            "Computer choice =  Rock\n",
+            "Result: It's a tie!\n"
+          ]
+        }
+      ]
+    }
+  ]
+}
